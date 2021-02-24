@@ -8,7 +8,7 @@ describe('registration', () => {
     });
     it('fill register fields', () => {
         cy.get('#last-name').click().type('Peric');
-        cy.get('#email').click().type('peraperic1234567890@gmail.com');
+        cy.get('#email').click().type('peraperic1234507890@gmail.com');
         cy.get('#password').click().type('12345678');
         cy.get('#password-confirmation').click().type('12345678');
         cy.get('input[type="checkbox"]').check();
@@ -27,7 +27,7 @@ describe('registration', () => {
     it('fill register fields', () => {
         cy.get('#first-name').click().clear().type('Pera');
         cy.get('#last-name').click().clear().type('Peric');
-        cy.get('#email').click().clear().type('peraperic17123458901@gmail.com');
+        cy.get('#email').click().clear().type('peraperic17123258901@gmail.com');
         cy.get('#password').click().clear().type('12345678');
         cy.get('#password-confirmation').click().clear().type('12345678');
         cy.get('input[type="checkbox"]').check();
