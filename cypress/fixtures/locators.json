@@ -1,0 +1,28 @@
+{
+    "login": {
+        "email": "#email",
+        "password": "#password",
+        "submit": "button[type='submit']",
+        "login": "a[href='/login']"
+    },
+    "logout": {
+        "logout": "a[role='button ']"
+    },
+    "register": {
+        "firstName": "#first-name",
+        "lastName": "#last-name",
+        "email": "#email",
+        "password": "#password",
+        "passwordConfirmation": "#password-confirmation",
+        "checkbox": "input[type='checkbox']",
+        "submit": "button[type='submit']",
+        "register": "a[href='/register']"
+    },
+    "create": {
+        "createGalleryBtn": "a[href='/create']",
+        "title": "#title",
+        "description": "#description",
+        "input": "input[type='url']",
+        "submit": "form > button:nth-of-type(1)"
+    }
+}
