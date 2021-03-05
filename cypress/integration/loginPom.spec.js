@@ -1,4 +1,6 @@
-import { loginPage } from '../page_objects/loginPage.js'
+import { loginPage } from '../page_objects/loginPage.js';
+const data = require("../fixtures/data.json");
+const errors = require("../fixtures/errors.json");
 
 describe('Login test', () => {
 
@@ -8,22 +10,34 @@ describe('Login test', () => {
     });
 
     it('login without password', () => {
-        loginPage.login("bla@gmail.com", " ")
+        loginPage.fillEmailInput(data.loginRegister.email);
+        cy.get('.btn').should('contain', 'Submit');
     });
     it('login incorrect email', () => {
-        loginPage.login("bla@gmail.com", "kjfhdshfak")
+        loginPage.login(data.loginRegister.emailIncorrect, data.loginRegister.password);
+        cy.get('.alert').should('contain', errors.login.incorrectMail);
     });
     it('login incorrect email type', () => {
-        loginPage.login("bla.gmail.com", "kjfhdshfak")
+        loginPage.login(data.loginRegister.emailIncorrectType, data.loginRegister.password);
+        loginPage.emailInput.should('exist');
+        loginPage.passwordInput.should('exist');
+        loginPage.submitButton.should('exist');
     });
     it('login password less than 8 characters', () => {
-        loginPage.login("bla@gmail.com", "1234567")
+        loginPage.login(data.loginRegister.email, data.loginRegister.passwordShort);
+        cy.get('.alert').should('contain', errors.login.passwordShort);
     });
     it('login password without number', () => {
-        loginPage.login("bla@gmail.com", "asdfghjkl")
+        loginPage.login(data.loginRegister.email, data.loginRegister.passwordWithoutNumber);
+        cy.get('.alert').should('contain', errors.login.passwordNoNumber);
     });
     it('Successful login', () => {
-        loginPage.login("bla@gmail.com", "12345678")
+        loginPage.login(data.loginRegister.email, data.loginRegister.password);
+        cy.url().should('eq', 'https://gallery-app.vivifyideas.com/');
+        cy.wait(1500);
+        loginPage.emailInput.should('not.exist');
+        loginPage.passwordInput.should('not.exist');
+        loginPage.submitButton.should('not.exist');
     });
     /* it('logout', () => {
         cy.get(locators.logout.logout).click();

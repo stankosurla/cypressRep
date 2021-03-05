@@ -1,6 +1,6 @@
 {
     "login": {
-        "email": "#email",
+        "email": "input[id='email']",
         "password": "#password",
         "submit": "button[type='submit']",
         "login": "a[href='/login']"

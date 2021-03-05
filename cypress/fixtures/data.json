@@ -1,0 +1,31 @@
+{
+    "loginRegister": {
+        "firstName": "Stanko",
+        "lastName": "Surla",
+        "email": "test1230067876@gmail.com",
+        "emailIncorrectType": "test12345678.gmail.com",
+        "emailWithoutCom": "test12345678@gmail",
+        "emailWithoutDot": "test12345678@gmailcom",
+        "emailIncorrect": "test246897531@gmail.com",
+        "password": "12345678",
+        "passwordConfirmation": "12345678",
+        "passwordShort": "1234567",
+        "passwordLong": "123456789",
+        "passwordWithoutNumber": "asdfghjkl"
+    },
+    "create": {
+        "title": "new cat",
+        "description": "new desc",
+        "imageUrlBadExtension": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jp",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg",
+        "titleOneLetter": "C",
+        "string256chars": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget volutpat ante. Donec augue augue, bibendum eu est semper, mattis venenatis velit. Nulla accumsan metus ex, sit amet pretium eros sollicitudin quis. Nam nisi arcu, porttitor at purus sed est.",
+        "imageCatOne": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Cat_March_2010-1.jpg",
+        "imageCatTwo": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Arthur%2C_the_cat.jpg",
+        "imageCatThree": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Red_Kitten_01.jpg",
+        "imageCatFour": "https://upload.wikimedia.org/wikipedia/commons/6/66/Taipei_cats.jpg",
+        "imageCatFive": "https://upload.wikimedia.org/wikipedia/commons/2/22/Turkish_Van_Cat.jpg",
+        "titleFiveCats": "Cats",
+        "descFiveCats": "Five Cats"
+    }
+}

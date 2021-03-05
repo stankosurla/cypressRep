@@ -1,0 +1,23 @@
+{
+    "createGallery": {
+        "alert": ".alert",
+        "titleShort": "The title must be at least 2 characters.",
+        "titleLong": "The title may not be greater than 255 characters.",
+        "imageBadExtension": "Wrong format of image"
+    },
+    "login": {
+        "incorrectMail": "Bad Credentials",
+        "passwordShort": "Bad Credentials",
+        "passwordNoNumber": "Bad Credentials"
+    },
+    "allGalleries": {
+        "notFound": "No galleries found"
+    },
+    "register": {
+        "passwordNotMatch": "The password confirmation does not match.",
+        "checkboxNotChecked": "The terms and conditions must be accepted.",
+        "emailWithoutDot": "The email must be a valid email address.",
+        "passwordShort": "The password must be at least 8 characters.",
+        "passwordWithoutNumber": "The password format is invalid."
+    }
+}
